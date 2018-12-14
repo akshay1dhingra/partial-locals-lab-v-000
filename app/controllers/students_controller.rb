@@ -23,7 +23,7 @@ class StudentsController < ApplicationController
   def index
     # binding.pry
     if params[:search]
-      @students = Student.search(params[:search][0])
+      @students = Student.search(params[:search])
     end
   end
 
